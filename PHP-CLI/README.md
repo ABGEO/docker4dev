@@ -21,9 +21,9 @@ Or build from Dockerfile `docker build -t d4d-php-cli {path-to-Dockerfile}`.
 After pull or build you must run the container.
 
 If you pull it from hub, you can start container by running `docker run -v {path-to-php-scripts-folder}:/usr/src/scripts -it abgeo/d4d-php-cli:v0.9`
-or if you build it manualy you can run `docker run -v {path-to-php-scripts-folder}:/usr/src/scripts -it d4d-php-cli` where `d4d-php-cli` is your build name.
+or if you build it manually you can run `docker run -v {path-to-php-scripts-folder}:/usr/src/scripts -it d4d-php-cli` where `d4d-php-cli` is your build name.
 
-After run you can access you'r container bash enviroment and run php scripts.
+After run you can access you'r container bash environment and run php scripts.
 
 #### Volumes
 Your container must implement one volume to path `/usr/src/scripts`.
