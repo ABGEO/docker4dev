@@ -1,11 +1,11 @@
 # Get latest Ubuntu version
 FROM ubuntu:latest
 
+MAINTAINER Temuri Takalandze(ABGEO) <takalandzet@gmail.com>
+
 # Set server timezone
 ENV TZ=Asia/Tbilisi
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
-
-MAINTAINER Temuri Takalandze(ABGEO) <takalandzet@gmail.com>
 
 # Update system
 RUN apt-get update
